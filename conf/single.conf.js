@@ -14,6 +14,13 @@ exports.config = {
     build: 'webdriver-browserstack'
   }],
 
+  reporters: ['browserstack'],
+  reporterOptions: {
+    browserstack: {
+      outputDir: './'
+    }
+  },
+
   logLevel: 'warn',
   coloredLogs: true,
   screenshotPath: './errorShots/',
