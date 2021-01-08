@@ -25,9 +25,10 @@
   "homepage": "https://github.com/browserstack/webdriverio-browserstack#readme",
   "dependencies": {
     "@wdio/cli": "^6.11.3",
+    "@wdio/reporter": "^6.11.0",
     "browserstack-local": "^1.3.7",
-    "wdio-browserstack-reporter": "https://github.com/browserstack/wdio-browserstack-reporter",
     "chai": "^4.2.0",
+    "wdio-browserstack-reporter": "https://github.com/browserstack/wdio-browserstack-reporter",
     "webdriverio": "^6.11.3"
   },
   "devDependencies": {
