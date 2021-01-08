@@ -18,7 +18,7 @@ steps:
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'BS'
-    browserstackLocal: true
+    browserstackLocal: false
 
 - script: |
     npm install
@@ -26,7 +26,3 @@ steps:
   displayName: 'npm install and build'
 
 - task: BrowserStackResults@0
-
-- task: CmdLine@2
-  inputs:
-    script: './BrowserStackLocal --key $BROWSERSTACK_ACCESS_KEY -d stop'
